@@ -8,7 +8,7 @@ class Listing
               :photos
               
   def initialize(listing)
-    @id = listing[:listingId]
+    @id = listing[:mlsId]
     @price = listing[:listPrice]
     @address = format_address(listing)
     @bedrooms = listing[:property][:bedrooms]

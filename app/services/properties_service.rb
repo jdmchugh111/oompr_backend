@@ -13,4 +13,12 @@ class PropertiesService
   def get_listings(city)
     get_url("/properties?cities=#{city}&limit=50&sort=-listprice")
   end
+
+  def get_one_listing(id)
+    get_url("/properties/#{id}")
+  end
+
+  def get_rc_listings(city, maxprice)
+    get_url("/properties?cities=#{city}&limit=50&sort=-listprice&maxprice=#{maxprice}")
+  end
 end
