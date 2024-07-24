@@ -1,4 +1,12 @@
 class Listing
+  attr_reader :id,
+              :price,
+              :address,
+              :bedrooms,
+              :bathrooms,
+              :sqft,
+              :photos
+              
   def initialize(listing)
     @id = listing[:listingId]
     @price = listing[:listPrice]
@@ -10,6 +18,7 @@ class Listing
   end
 
   def format_address(listing)
-    "#{listing[:address][:full]}, #{listing[:city]}, #{listing[:state]} #{listing[:postalCode]}"
+    hash = listing[:address]
+    "#{hash[:full]}, #{hash[:city]}, #{hash[:state]} #{hash[:postalCode]}"
   end
 end
