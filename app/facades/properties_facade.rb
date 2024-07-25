@@ -22,4 +22,10 @@ class PropertiesFacade
       Listing.new(listing_hash)
     end
   end
+
+  def get_max(monthly)
+    monthly_payment = monthly.to_i / 3.0
+    interest_rate = 0.075
+    (monthly_payment * 12.0) / interest_rate
+  end
 end
