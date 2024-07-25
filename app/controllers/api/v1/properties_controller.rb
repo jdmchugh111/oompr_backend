@@ -2,7 +2,7 @@ class Api::V1::PropertiesController < ApplicationController
   def index
     facade = PropertiesFacade.new
     if params[:monthly].present?
-      maxprice = get_max(params[:monthly])
+      maxprice = facade.get_max(params[:monthly])
       properties = facade.rc_search(params[:city], maxprice)
       render json: ListingSerializer.new(properties)
     else
@@ -15,11 +15,5 @@ class Api::V1::PropertiesController < ApplicationController
     facade = PropertiesFacade.new
     listing = facade.get_listing(params[:id])
     render json: ListingSerializer.new(listing)
-  end
-
-  private
-
-  def get_max(monthly)
-    ((monthly.to_i / 3.0) * 12.0) / 0.075
   end
 end
