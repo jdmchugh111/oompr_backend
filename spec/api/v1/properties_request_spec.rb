@@ -82,4 +82,19 @@ describe "oompr search results" do
       expect(listing[:attributes][:photos]).to be_a Array
     end
   end
+
+  describe "sad path" do
+    it "will return a serilaized 404 not found error response if you pass in an id that does not exist", :vcr do
+      get "/api/v1/properties/9999999"
+
+      expect(response).to_not be_successful
+
+      error = JSON.parse(response.body, symbolize_names: true)[:errors][0]
+
+      expect(error).to have_key :code
+      expect(error).to have_key :message
+      expect(error[:code]).to eq(404)
+      expect(error[:message]).to eq("Resource not found")
+    end
+  end
 end

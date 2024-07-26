@@ -1,4 +1,7 @@
 class Api::V1::PropertiesController < ApplicationController
+
+rescue_from NoMethodError, with: :bad_request_error
+
   def index
     facade = PropertiesFacade.new
     if params[:monthly].present?
@@ -16,4 +19,10 @@ class Api::V1::PropertiesController < ApplicationController
     listing = facade.get_listing(params[:id])
     render json: ListingSerializer.new(listing)
   end
+
+  private
+
+    def bad_request_error(exception)
+      render json: ErrorSerializer.new(ErrorMessage.new("Resource not found", 404)).serialize_json, status: :not_found
+    end
 end
