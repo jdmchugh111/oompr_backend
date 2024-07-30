@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.simplyrets.com/properties/1005172
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Authorization:
+      - Basic c2ltcGx5cmV0czpzaW1wbHlyZXRz
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jul 2024 00:21:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - nginx/1.24.0
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT, PATCH, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Authorization
+      Access-Control-Expose-Headers:
+      - X-Total-Count, X-SimplyRETS-LastUpdate, X-SimplyRETS-Media-Type, Link
+      X-Simplyrets-Media-Type:
+      - vnd.simplyrets-v0.1
+      Vary:
+      - Accept, Accept-Language
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: "{\"privateRemarks\":\"This property is a trial property to test the
+        SimplyRETS. Private agent remarks will be included in this field for use in
+        the SimplyRETS REST API. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+        est laborum.\",\"showingContactName\":null,\"property\":{\"roof\":\"Aluminum,
+        Composition\",\"cooling\":null,\"style\":\"Ranch\",\"area\":3477,\"bathsFull\":4,\"bathsHalf\":1,\"stories\":3,\"fireplaces\":1,\"flooring\":null,\"heating\":\"Central
+        Furnace,Energy Star,High Efficiency,Fireplace,Humidity Control\",\"bathrooms\":null,\"foundation\":\"Block
+        & Beam\",\"laundryFeatures\":\"Area,Electric Dryer Hookup,Individual Room,Washer
+        Hookup\",\"occupantName\":null,\"ownerName\":null,\"lotDescription\":\"Corner\",\"pool\":\"Community\",\"subType\":\"SingleFamilyResidence\",\"bedrooms\":5,\"interiorFeatures\":\"Drapes/Curtains/Window
+        Cover, Fire/Smoke Alarm, High Ceiling, Prewired for Alarm System\",\"lotSize\":\"50/143X70/163\",\"areaSource\":\"Floorplans\",\"maintenanceExpense\":null,\"additionalRooms\":\"Bonus,Den,Living
+        Room,Main Floor Bedroom\",\"exteriorFeatures\":\"Back Yard Fenced, Covered
+        Patio/Deck, Patio/Deck, Satellite Dish, Storage Shed, Subdivision Tennis Court\",\"water\":null,\"view\":\"Neighborhood\",\"lotSizeArea\":null,\"subdivision\":\"Terranova
+        West Sec 03\",\"construction\":\"Gas & Electric Dryer Hookup,Gas Dryer Hookup,Inside,Individual
+        Room\",\"parking\":{\"leased\":null,\"spaces\":3,\"description\":\"Uncovered,Driveway,Driveway
+        - Concrete,See Remarks\"},\"lotSizeAreaUnits\":null,\"type\":\"RES\",\"garageSpaces\":3.2648817750966175,\"bathsThreeQuarter\":null,\"accessibility\":\"Automatic
+        Gate\",\"acres\":null,\"occupantType\":null,\"subTypeText\":null,\"yearBuilt\":1978},\"mlsId\":1005172,\"showingContactPhone\":null,\"terms\":\"Conventional,Cash,VA
+        Loan,Cash To New Loan\",\"showingInstructions\":\"The showing instructions
+        for this trial property are brought to you by the SimplyRETS team. This field
+        will include any showing remarks for the given listing in your RETS feed.
+        Enjoy!\",\"office\":{\"contact\":{\"email\":\"info-office@example.com\",\"office\":\"(541)
+        682-2997\",\"cell\":null},\"name\":null,\"servingName\":null,\"brokerid\":null},\"leaseTerm\":null,\"disclaimer\":\"This
+        information is believed to be accurate, but without warranty.\",\"specialListingConditions\":null,\"originalListPrice\":null,\"address\":{\"crossStreet\":\"East
+        Katella & Handy Street\",\"state\":\"Texas\",\"country\":\"United States\",\"postalCode\":\"77375\",\"streetName\":\"South
+        99 CT Estates\",\"streetNumberText\":\"68827\",\"city\":\"Houston\",\"streetNumber\":68827,\"full\":\"68827
+        South 99 CT Estates #783\",\"unit\":\"783\"},\"agreement\":\"Exclusive Right
+        To Sell\",\"listDate\":\"2010-01-26T01:51:46.915087Z\",\"agent\":{\"officeMlsId\":null,\"lastName\":\"Mendoza\",\"contact\":{\"email\":\"agent@example.com\",\"office\":\"(541)
+        682-2997\",\"cell\":\"(009) 022-2455\"},\"address\":null,\"modified\":null,\"firstName\":\"Scott\",\"id\":\"smendoza\"},\"modified\":\"2006-03-16T13:48:17.525789Z\",\"school\":{\"middleSchool\":\"Pattison\",\"highSchool\":\"Klein
+        Oak\",\"elementarySchool\":\"Greenwood\",\"district\":null},\"photos\":[\"https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home4.jpg\",\"https://s3-us-west-2.amazonaws.com/cdn.simplyrets.com/properties/trial/home-inside-4.jpg\"],\"listPrice\":18730333,\"internetAddressDisplay\":null,\"listingId\":\"59437738\",\"mls\":{\"status\":\"Pending\",\"area\":\"Memorial
+        West\",\"daysOnMarket\":446,\"originalEntryTimestamp\":null,\"originatingSystemName\":null,\"statusText\":\"ÿ\x93\",\"areaMinor\":null},\"internetEntireListingDisplay\":null,\"geo\":{\"county\":\"West\",\"lat\":29.747591,\"lng\":-95.577139,\"marketArea\":\"Memorial
+        West\",\"directions\":\"From 290 exit Barker Cypress to left on Tuckerton,
+        right on Danbury Bridge, right on Bending Post, right on Driftwood Prairie\"},\"tax\":{\"taxYear\":1965,\"taxAnnualAmount\":2326,\"id\":\"870-420-184-4578\"},\"coAgent\":{\"officeMlsId\":null,\"lastName\":null,\"contact\":{\"email\":\"coagent@example.com\",\"office\":\"(024)
+        854-4588\",\"cell\":null},\"address\":null,\"modified\":null,\"firstName\":null,\"id\":\"KWCO834\"},\"sales\":{\"closeDate\":\"1995-09-10T04:19:22.097351Z\",\"office\":{\"contact\":null,\"name\":\"Keller
+        Williams Greater Houston\",\"servingName\":\"Keller Williams Greater Houston\",\"brokerid\":\"KWCO834\"},\"closePrice\":12983889,\"agent\":{\"officeMlsId\":\"KWCO834\",\"lastName\":\"Mullins\",\"contact\":null,\"address\":null,\"modified\":null,\"firstName\":\"Uriel\",\"id\":\"umullins\"},\"contractDate\":null},\"ownership\":null,\"leaseType\":\"Net,Triple
+        Net\",\"virtualTourUrl\":null,\"remarks\":\"This property is a trial property
+        to test the SimplyRETS. This field will include remarks or descriptions from
+        your RETS feed intended for public view. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum.\",\"association\":{\"frequency\":null,\"fee\":1000,\"name\":\"SimplyRETS
+        Home Owners Association\",\"amenities\":\"Club House,Community Pool,Garden/
+        Greenbelt/ Trails,Playground,Recreation Room,Sauna/ Spa/ Hot Tub\"}}"
+  recorded_at: Tue, 30 Jul 2024 00:21:00 GMT
+recorded_with: VCR 6.2.0
