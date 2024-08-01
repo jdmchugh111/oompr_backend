@@ -4,18 +4,18 @@
 
 This is the backend repository for Oompr, an application that allows you to "window shop" for luxury real estate listings. Oompr (which is in acronym for Out Of My Price Range) allows users to search by city and be shown the most expensive real estate listings in that city. Users can also log in and save listings, and that list of saved listings is stored in their user dashboard.
 <br><br>
-[Deployed Application]([https://pacific-dusk-48184-9d5b91032508.herokuapp.com/])
+[Deployed Application](https://pacific-dusk-48184-9d5b91032508.herokuapp.com/)
 <br><br>
-[Frontend Respository]([https://github.com/jdmchugh111/oompr_frontend])
+[Frontend Respository](https://github.com/jdmchugh111/oompr_frontend)
 <br>
 
 ## Contributors
 
-[James McHugh]([https://github.com/jdmchugh111])
+[James McHugh](https://github.com/jdmchugh111)
 <br><br>
-[Rodrigo Chavez]([https://github.com/RodrigoACG])
+[Rodrigo Chavez](https://github.com/RodrigoACG)
 <br><br>
-[Zach Bergman]([https://github.com/zach-bergman])
+[Zach Bergman](https://github.com/zach-bergman)
 <br>
 
 ## Database Schema
