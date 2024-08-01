@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 25 Jul 2024 16:49:05 GMT
+      - Thu, 01 Aug 2024 17:09:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -590,5 +590,5 @@ http_interactions:
         anim id est laborum.\",\"association\":{\"frequency\":null,\"fee\":1000,\"name\":\"SimplyRETS
         Home Owners Association\",\"amenities\":\"Club House,Community Pool,Garden/
         Greenbelt/ Trails,Playground,Recreation Room,Sauna/ Spa/ Hot Tub\"}}]"
-  recorded_at: Thu, 25 Jul 2024 16:49:05 GMT
+  recorded_at: Thu, 01 Aug 2024 17:09:35 GMT
 recorded_with: VCR 6.2.0
